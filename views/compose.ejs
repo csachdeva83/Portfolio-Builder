@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Details</title>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./css/formStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SHARE YOUR DETAILS</h1>
+        <form action="/compose" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <div class="column">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your name here"  autocomplete="off">
+                </div>
+                <div class="column">
+                    <label>Profile Picture</label>
+                    <input type="file" name="profile-file" id="name"  autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Developer</label>
+                    <input type="text" name="developer" id="email" placeholder="Which developer you are?"  autocomplete="off">
+                </div>
+                <div class="column">
+                    <label>Country</label>
+                    <input type="text" name="country" id="subject" placeholder="Your country here"  autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Email</label>
+                    <input type="email" name="mail" id="name" placeholder="Your email here"  autocomplete="off">
+                </div>
+                <div class="column">
+                    <label>Address</label>
+                    <input type="text" name="address" id="contact" placeholder="Your address here"  autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Top 4 Skills</label>
+                    <input type="text" name="skill1" id="subject" placeholder="Write you are proficient at ?"  autocomplete="off">
+                    <input type="text" name="skill2" id="subject" placeholder="Write you are proficient at ?"  autocomplete="off">
+                    <input type="text" name="skill3" id="subject" placeholder="Write you are proficient at ?"  autocomplete="off">
+                    <input type="text" name="skill4" id="subject" placeholder="Write you are proficient at ?"  autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="column">
+                        <label>Enter name and image of Project 1</label>
+                        <input type="text" name="projectTitle1" id="subject" placeholder="Write your project 1 name"  autocomplete="off">
+                        <input type="file" name="projectImg1" id="name"  autocomplete="off">
+                        <textarea id="issue" name="project1" placeholder="Describe about your project in not more than 20 words" rows="3"  autocomplete="off"></textarea>
+                    </div>
+                    <div class="column">
+                        <label>Enter name and image of Project 2</label>
+                        <input type="text" name="projectTitle2" id="subject" placeholder="Write your project 2 name"  autocomplete="off">
+                        <input type="file" name="projectImg2" id="name"  autocomplete="off">
+                        <textarea id="issue" name="project2" placeholder="Describe about your project in not more than 20 words" rows="3"  autocomplete="off"></textarea>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Describe about yourself</label>
+                    <textarea name="intro" id="issue" placeholder="Describe about yourself in not more than 60 words" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Share Profile Links</label>
+                    <input type="url" name="github" id="subject" placeholder="Share link of your github account"  autocomplete="off">
+                    <input type="url" name="linkedin" id="subject" placeholder="Share link of your linkedin account"  autocomplete="off">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>How to be contacted</label>
+                    <textarea id="issue" name="callInfo" placeholder="Describe on how to be contacted or your means to connect them in not more than 20 words" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <label>Resume</label>
+                    <input type="file" name="resume" id="name"  autocomplete="off">
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
